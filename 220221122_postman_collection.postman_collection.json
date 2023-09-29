@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "c4777ae4-99c5-4c88-8942-28d08fc6f36e",
+		"name": "220221122_postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6822177"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"santoshh kharel\",\r\n    \"userPassword\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:9090/api/user/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "your-secret-key",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"manpreet\",\r\n    \"userPassword\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:9090/api/user/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "games",
+			"item": [
+				{
+					"name": "getAllGames",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"playerName\": \"Michael Clarke\",\r\n      \"matchDuration\": 360,\r\n      \"gameState\": \"completed\",\r\n      \"winningPlayer\": \"white\",\r\n      \"boardSize\": 10\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:9090/api/game/games"
+					},
+					"response": []
+				},
+				{
+					"name": "getGameById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:9090/api/game/games/64fc49fe4563b898d06f262a"
+					},
+					"response": []
+				},
+				{
+					"name": "addGames",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "localhost:9090/api/game/games"
+					},
+					"response": []
+				},
+				{
+					"name": "updateGame",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"playerName\": \"Kumar Sanggakara\",\r\n    \"gameState\": \"complete\",\r\n    \"matchDuration\": 285,\r\n    \"winningPlayer\": \"white\",\r\n    \"boardSize\": 20\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:9090/api/game/games/64fc49fe4563b898d06f262a"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

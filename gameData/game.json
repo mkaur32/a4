@@ -1,0 +1,38 @@
+[
+    {
+      "playerName": "alice",
+      "matchDuration": 180,
+      "gameState": "in-progress",
+      "winningPlayer": "white",
+      "boardSize": 13
+    },
+    {
+      "playerName": "bob",
+      "matchDuration": 155,
+      "gameState": "complete",
+      "winningPlayer": "black",
+      "boardSize": 19
+    },
+    {
+      "playerName": "charlie",
+      "matchDuration": 90,
+      "gameState": "complete",
+      "winningPlayer": "white",
+      "boardSize": 14
+    },
+    {
+      "playerName": "dave",
+      "matchDuration": 220,
+      "gameState": "in-progress",
+      "winningPlayer": "black",
+      "boardSize": 12
+    },
+    {
+      "playerName": "eve",
+      "matchDuration": 135,
+      "gameState": "complete",
+      "winningPlayer": "white",
+      "boardSize": 16
+    }
+  ]
+  
